@@ -6,7 +6,6 @@ const singerStyle = {
   color: 'skyblue',
   backgroundColor: 'gray',
   padding : 20 ,
-  radius: 20 ,
 
 }
 function App() {
