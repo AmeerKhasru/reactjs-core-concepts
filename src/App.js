@@ -11,13 +11,13 @@ const singerStyle = {
 function App() {
   return (
     <div className="App">
-      <Person name = "Rubel"></Person>
-      <Person name = "Shukkur"></Person>
+      <Person name = "Rubel" job ="Cricketer"></Person>
+      <Person name = "Buchuk" job ="Hadudu Player"></Person>
       <Person></Person>
       <Person></Person>
       <h1>Some Info About friends</h1>
-      <Friend></Friend>
-      <Friend></Friend>
+      <Friend name = "Sami Assad"></Friend>
+      <Friend name = "Farhad"></Friend>
       <Friend></Friend>
     </div>
   );
@@ -26,14 +26,14 @@ function Person(props){
   return(
     <div className='person'>
       <h1> {props.name}</h1>
-      <p>Profession : Software Engineer</p>
+      <p>Profession :{ props.job}</p>
     </div>
   )
 } 
-function Friend(){
+function Friend(props1){
   return(
     <div className='friend'>
-       <h1>Sami Assad</h1>
+       <h1>{props1.name}</h1>
        <p>Profession: Engineer</p>
     </div>
   )
